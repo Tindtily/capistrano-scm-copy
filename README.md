@@ -31,11 +31,7 @@ Add to Capfile:
 
     require 'capistrano/makecopy'
     install_plugin Capistrano::SCM::MakeCopy
-    
-Then switch the `:scm` option to `:copy` in `config/deploy.rb`:
 
-    set :scm, :copy
-    
 TODO
 ====
 
