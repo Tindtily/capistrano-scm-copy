@@ -41,10 +41,6 @@ namespace :copy do
     File.delete archive_name if File.exists? archive_name
   end
 
-  after 'deploy:finished', 'copy:clean'
 
   task :create_release => :deploy
-  task :check
-  task :set_current_revision
-
 end

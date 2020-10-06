@@ -1,9 +1,11 @@
-capistrano-scm-copy
+capistrano-scm-makecopy
 ===================
 
 A copy strategy for Capistrano 3, which mimics the `:copy` scm of Capistrano 2.
 
 This will make Capistrano tar the current directory, upload it to the server(s) and then extract it in the release directory.
+
+This is a fork from [capistrano-scm-copy](https://github.com/wercker/capistrano-scm-copy). It only fixed an issue that the tar command ran twice. As the repository was archived, I had to start all over again.
 
 Requirements
 ============
@@ -21,13 +23,14 @@ Servers:
 Installation
 ============
 
-First make sure you install the capistrano-scm-copy by adding it to your `Gemfile`:
+First make sure you install the capistrano-scm-makecopy by adding it to your `Gemfile`:
 
-    gem "capistrano-scm-copy"
+    gem "capistrano-scm-makecopy"
 
 Add to Capfile:
 
-    require 'capistrano/copy'
+    require 'capistrano/makecopy'
+    install_plugin Capistrano::SCM::MakeCopy
     
 Then switch the `:scm` option to `:copy` in `config/deploy.rb`:
 
@@ -45,6 +48,10 @@ The MIT License (MIT)
 
 Changelog
 =========
+0.8.1
+-----
+
+- Fix issue [Appears to try to upload archive file 2x](https://github.com/wercker/capistrano-scm-copy/issues/17)
 
 0.5.0
 -----

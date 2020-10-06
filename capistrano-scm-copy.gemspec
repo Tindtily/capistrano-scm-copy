@@ -2,12 +2,12 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = "capistrano-scm-copy"
-  s.version     = "0.7.0"
+  s.name        = "capistrano-scm-makecopy"
+  s.version     = "0.8.1"
   s.licenses    = ["MIT"]
-  s.authors     = ["Benno van den Berg"]
-  s.email       = ["bennovandenberg@gmail.com"]
-  s.homepage    = "https://github.com/wercker/capistrano-scm-copy"
+  s.authors     = ["Morphling"]
+  s.email       = ["283893159@qq.com"]
+  s.homepage    = "https://github.com/Tindtily/capistrano-scm-makecopy"
   s.summary     = %q{Copy strategy for capistrano 3.x}
   s.description = %q{Copy strategy for capistrano 3.x}
 
