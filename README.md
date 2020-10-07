@@ -44,6 +44,17 @@ The MIT License (MIT)
 
 Changelog
 =========
+
+0.8.3
+-----
+
+- Fix require error
+
+0.8.2
+-----
+
+- Update readme
+
 0.8.1
 -----
 
