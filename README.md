@@ -45,6 +45,11 @@ The MIT License (MIT)
 Changelog
 =========
 
+0.8.4
+-----
+
+- Fix empty variable error
+
 0.8.3
 -----
 
